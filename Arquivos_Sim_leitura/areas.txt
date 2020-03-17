@@ -1,0 +1,10 @@
+Arquivo contendo as áreas de superficie das estruturas 2D. Ordem dos dados, Altura da placa, largura da placa, área da placa
+MEa1_0250 = 12.15 mm 193.35 mm 1072.76 mm2
+MEa1_0500 = 12.18 mm 194.44 mm 1075.96 mm2
+MEa1_1000 = 12.00 mm 190.02 mm 1043.79 mm2
+SO00_0250 = 12.02 mm 160.17 mm 719.050 mm2  
+SO00_0500 = 12.00 mm 196.00 mm 887.610 mm2 
+SO00_1000 = 12.01 mm 190.54 mm 879.190 mm2
+SO05_0250 = 12.07 mm 181.35 mm 1179.58 mm2
+SO05_0500 = 12.07 mm 201.50 mm 1307.90 mm2
+SO05_1000 = 12.08 mm 192.64 mm 1295.44 mm2
