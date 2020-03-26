@@ -62,8 +62,10 @@ class Sim:
             ax_ind.plot(self.time, self.kin_en, color="black", linestyle=self.linest, label=self.fam_name + self.size)
         elif self.fam_name == "SO05":
             ax_ind.plot(self.time, self.kin_en, color="blue", linestyle=self.linest, label=self.fam_name + self.size)
-        elif self.fam_name == "MEa1":
+        elif self.fam_name == "ME00":
             ax_ind.plot(self.time, self.kin_en, color="red", linestyle=self.linest, label=self.fam_name + self.size)
+        elif self.fam_name == "ME05":
+            ax_ind.plot(self.time, self.kin_en, color="crimson", linestyle=self.linest, label=self.fam_name + self.size)
         else:
             raise ValueError("Nome da família não especificado.")
 
@@ -83,8 +85,11 @@ class Sim:
         elif self.fam_name == "SO05":
             ax_scatter.scatter(self.area_density, delta_kin, color="blue", marker=self.marker,
                                label=self.fam_name + self.size)
-        elif self.fam_name == "MEa1":
+        elif self.fam_name == "ME00":
             ax_scatter.scatter(self.area_density, delta_kin, color="red", marker=self.marker,
+                               label=self.fam_name + self.size)
+        elif self.fam_name == "ME05":
+            ax_scatter.scatter(self.area_density, delta_kin, color="crimson", marker=self.marker,
                                label=self.fam_name + self.size)
         else:
             raise ValueError("Nome da família não especificado.")
@@ -143,7 +148,8 @@ areas_arq.close()
 
 for structure in structures:
     #print(structure.kin_en)
-    #print(structure.kin_en_i, structure.kin_en_f)
+    print(structure.fam_name, structure.size)
+    print(structure.kin_en_i, structure.kin_en_f, (structure.kin_en_i-structure.kin_en_f))
     structure.kin_en_plot()
     structure.kin_en_scatter()
 
