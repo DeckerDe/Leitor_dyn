@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../ContinuumMech/.idea/ContinuumMech.iml" filepath="$PROJECT_DIR$/../ContinuumMech/.idea/ContinuumMech.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/TCCDados.iml" filepath="$PROJECT_DIR$/.idea/TCCDados.iml" />
     </modules>
   </component>
